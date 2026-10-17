@@ -1,0 +1,632 @@
+{
+ "b33i2873": {
+  "src": "b33i2873.jpg"
+ },
+ "b33i3420": {
+  "src": "b33i3420.jpg"
+ },
+ "b33i3444": {
+  "src": "b33i3444.jpg"
+ },
+ "bote-ad-example-2": {
+  "src": "bote-ad-example-2.jpeg"
+ },
+ "bote-ad-example": {
+  "src": "bote-ad-example.png"
+ },
+ "bote-ad-rendering": {
+  "src": "bote-ad-rendering.jpg"
+ },
+ "bote-lifestyle": {
+  "src": "bote-lifestyle.jpg"
+ },
+ "bote-wrapped-locker": {
+  "src": "bote-wrapped-locker.png"
+ },
+ "clj03-01": {
+  "src": "clj03-01.png"
+ },
+ "clj03-02": {
+  "src": "clj03-02.png"
+ },
+ "clj03-03": {
+  "src": "clj03-03.png"
+ },
+ "clj03-04": {
+  "src": "clj03-04.png"
+ },
+ "clj03-05": {
+  "src": "clj03-05.png"
+ },
+ "clj03-06": {
+  "src": "clj03-06.png"
+ },
+ "clj03-full-unit": {
+  "src": "clj03-full-unit.jpeg"
+ },
+ "clj05-full-setup": {
+  "src": "clj05-full-setup.jpg"
+ },
+ "clj05-locker-open": {
+  "src": "clj05-locker-open.jpg"
+ },
+ "clj05-surfboards-locker": {
+  "src": "clj05-surfboards-locker.jpg"
+ },
+ "clj05-v2-sports-gear": {
+  "src": "clj05-v2-sports-gear.jpg"
+ },
+ "clj05-wide-bluesky": {
+  "src": "clj05-wide-bluesky.jpg"
+ },
+ "cobranding-1": {
+  "src": "cobranding-1.jpg"
+ },
+ "cobranding-2": {
+  "src": "cobranding-2.jpg"
+ },
+ "dji-drone-floats": {
+  "src": "dji-drone-floats.jpg"
+ },
+ "float-dock-fx": {
+  "src": "float-dock-fx.jpg"
+ },
+ "float-dock10": {
+  "src": "float-dock10.png"
+ },
+ "float-hangout-ladder": {
+  "src": "float-hangout-ladder.png"
+ },
+ "i-own-a-location": {
+  "src": "i-own-a-location.jpg"
+ },
+ "kayak-koda-120": {
+  "src": "kayak-koda-120.png"
+ },
+ "kayak-koda-140": {
+  "src": "kayak-koda-140.png"
+ },
+ "kayak-photo": {
+  "src": "kayak-photo.jpg"
+ },
+ "kayak-vali": {
+  "src": "kayak-vali.png"
+ },
+ "military-headshot": {
+  "src": "military-headshot.jpg"
+ },
+ "ocsj4353": {
+  "src": "ocsj4353.jpg"
+ },
+ "oftq5355": {
+  "src": "oftq5355.jpg"
+ },
+ "pfim3794": {
+  "src": "pfim3794.jpg",
+  "orig": [
+   1440,
+   1800
+  ],
+  "out": {
+   "lg": [
+    1440,
+    1800,
+    183
+   ],
+   "-md": [
+    960,
+    1200,
+    103
+   ],
+   "-sm": [
+    512,
+    640,
+    40
+   ]
+  }
+ },
+ "river-group-float": {
+  "src": "river-group-float.jpg",
+  "orig": [
+   3000,
+   2000
+  ],
+  "out": {
+   "lg": [
+    1920,
+    1280,
+    197
+   ],
+   "-md": [
+    1200,
+    800,
+    99
+   ],
+   "-sm": [
+    640,
+    427,
+    38
+   ]
+  }
+ },
+ "screenshot-145126": {
+  "src": "screenshot-145126.jpg",
+  "orig": [
+   1476,
+   1108
+  ],
+  "out": {
+   "lg": [
+    1476,
+    1108,
+    159
+   ],
+   "-md": [
+    1200,
+    901,
+    114
+   ],
+   "-sm": [
+    640,
+    480,
+    49
+   ]
+  }
+ },
+ "screenshot-145152": {
+  "src": "screenshot-145152.jpg",
+  "orig": [
+   1477,
+   1105
+  ],
+  "out": {
+   "lg": [
+    1477,
+    1105,
+    162
+   ],
+   "-md": [
+    1200,
+    898,
+    106
+   ],
+   "-sm": [
+    640,
+    479,
+    38
+   ]
+  }
+ },
+ "screenshot-214141": {
+  "src": "screenshot-214141.png",
+  "orig": [
+   988,
+   1040
+  ],
+  "out": {
+   "lg": [
+    988,
+    1040,
+    185
+   ],
+   "-md": [
+    988,
+    1040,
+    185
+   ],
+   "-sm": [
+    608,
+    640,
+    68
+   ]
+  }
+ },
+ "screenshot-locker-gear": {
+  "src": "screenshot-locker-gear.png",
+  "orig": [
+   902,
+   1204
+  ],
+  "out": {
+   "lg": [
+    902,
+    1204,
+    173
+   ],
+   "-md": [
+    899,
+    1200,
+    157
+   ],
+   "-sm": [
+    479,
+    640,
+    51
+   ]
+  }
+ },
+ "screenshot-locker-open": {
+  "src": "screenshot-locker-open.png",
+  "orig": [
+   1282,
+   1192
+  ],
+  "out": {
+   "lg": [
+    1282,
+    1192,
+    366
+   ],
+   "-md": [
+    1200,
+    1116,
+    297
+   ],
+   "-sm": [
+    640,
+    595,
+    91
+   ]
+  }
+ },
+ "screenshot-sports-gear": {
+  "src": "screenshot-sports-gear.png",
+  "orig": [
+   748,
+   688
+  ],
+  "out": {
+   "lg": [
+    748,
+    688,
+    65
+   ],
+   "-md": [
+    748,
+    688,
+    65
+   ],
+   "-sm": [
+    640,
+    589,
+    48
+   ]
+  }
+ },
+ "screenshot-surfboards": {
+  "src": "screenshot-surfboards.png",
+  "orig": [
+   822,
+   880
+  ],
+  "out": {
+   "lg": [
+    822,
+    880,
+    131
+   ],
+   "-md": [
+    822,
+    880,
+    131
+   ],
+   "-sm": [
+    598,
+    640,
+    69
+   ]
+  }
+ },
+ "screenshot-v2-locker": {
+  "src": "screenshot-v2-locker.png",
+  "orig": [
+   808,
+   870
+  ],
+  "out": {
+   "lg": [
+    808,
+    870,
+    113
+   ],
+   "-md": [
+    808,
+    870,
+    113
+   ],
+   "-sm": [
+    594,
+    640,
+    59
+   ]
+  }
+ },
+ "sports-bundle": {
+  "src": "sports-bundle.png",
+  "orig": [
+   748,
+   688
+  ],
+  "out": {
+   "lg": [
+    748,
+    688,
+    65
+   ],
+   "-md": [
+    748,
+    688,
+    65
+   ],
+   "-sm": [
+    640,
+    589,
+    48
+   ]
+  }
+ },
+ "sup-gatorshell": {
+  "src": "sup-gatorshell.jpg",
+  "orig": [
+   2048,
+   2048
+  ],
+  "out": {
+   "lg": [
+    1920,
+    1920,
+    208
+   ],
+   "-md": [
+    1200,
+    1200,
+    88
+   ],
+   "-sm": [
+    640,
+    640,
+    27
+   ]
+  }
+ },
+ "sup-hd-mangrove": {
+  "src": "sup-hd-mangrove.png",
+  "orig": [
+   2048,
+   2048
+  ],
+  "out": {
+   "lg": [
+    1920,
+    1920,
+    310
+   ],
+   "-md": [
+    1200,
+    1200,
+    165
+   ],
+   "-sm": [
+    640,
+    640,
+    64
+   ]
+  }
+ },
+ "sup-hd-topwater": {
+  "src": "sup-hd-topwater.png",
+  "orig": [
+   2048,
+   2048
+  ],
+  "out": {
+   "lg": [
+    1920,
+    1920,
+    178
+   ],
+   "-md": [
+    1200,
+    1200,
+    93
+   ],
+   "-sm": [
+    640,
+    640,
+    38
+   ]
+  }
+ },
+ "sup-rackham-cutthroat": {
+  "src": "sup-rackham-cutthroat.png",
+  "orig": [
+   2048,
+   2048
+  ],
+  "out": {
+   "lg": [
+    1920,
+    1920,
+    227
+   ],
+   "-md": [
+    1200,
+    1200,
+    113
+   ],
+   "-sm": [
+    640,
+    640,
+    42
+   ]
+  }
+ },
+ "sup-rackham-fusion": {
+  "src": "sup-rackham-fusion.png",
+  "orig": [
+   2048,
+   2048
+  ],
+  "out": {
+   "lg": [
+    1920,
+    1920,
+    341
+   ],
+   "-md": [
+    1200,
+    1200,
+    173
+   ],
+   "-sm": [
+    640,
+    640,
+    59
+   ]
+  }
+ },
+ "sup-yoga": {
+  "src": "sup-yoga.jpg",
+  "orig": [
+   3000,
+   2000
+  ],
+  "out": {
+   "lg": [
+    1920,
+    1280,
+    319
+   ],
+   "-md": [
+    1200,
+    800,
+    155
+   ],
+   "-sm": [
+    640,
+    427,
+    57
+   ]
+  }
+ },
+ "surfing-shot-2": {
+  "src": "surfing-shot-2.jpg",
+  "orig": [
+   712,
+   726
+  ],
+  "out": {
+   "lg": [
+    712,
+    726,
+    98
+   ],
+   "-md": [
+    712,
+    726,
+    98
+   ],
+   "-sm": [
+    628,
+    640,
+    70
+   ]
+  }
+ },
+ "surfing-shot-3": {
+  "src": "surfing-shot-3.jpg",
+  "orig": [
+   739,
+   721
+  ],
+  "out": {
+   "lg": [
+    739,
+    721,
+    93
+   ],
+   "-md": [
+    739,
+    721,
+    93
+   ],
+   "-sm": [
+    640,
+    624,
+    71
+   ]
+  }
+ },
+ "surfing-shot": {
+  "src": "surfing-shot.jpg",
+  "orig": [
+   709,
+   748
+  ],
+  "out": {
+   "lg": [
+    709,
+    748,
+    62
+   ],
+   "-md": [
+    709,
+    748,
+    62
+   ],
+   "-sm": [
+    607,
+    640,
+    45
+   ]
+  }
+ },
+ "yoga-shot-2": {
+  "src": "yoga-shot-2.jpg",
+  "orig": [
+   1029,
+   786
+  ],
+  "out": {
+   "lg": [
+    1029,
+    786,
+    114
+   ],
+   "-md": [
+    1029,
+    786,
+    114
+   ],
+   "-sm": [
+    640,
+    489,
+    59
+   ]
+  }
+ },
+ "yoga-shot": {
+  "src": "yoga-shot.jpg",
+  "orig": [
+   1221,
+   691
+  ],
+  "out": {
+   "lg": [
+    1221,
+    691,
+    154
+   ],
+   "-md": [
+    1200,
+    679,
+    137
+   ],
+   "-sm": [
+    640,
+    362,
+    49
+   ]
+  }
+ }
+}

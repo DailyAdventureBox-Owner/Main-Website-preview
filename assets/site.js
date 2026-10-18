@@ -142,11 +142,10 @@
   var framed = false; try { framed = w.self !== w.top; } catch (e) { framed = true; }
   if (framed) {
     var routes = {
+      /* Pages with their own Webflow route open at the top level; the rest load inside this frame
+         until /gear, /host-a-locker and /our-story exist on Webflow. */
       'index.html': 'https://www.dailyadventurebox.com/',
-      'gear.html': 'https://www.dailyadventurebox.com/gear',
-      'locations.html': 'https://www.dailyadventurebox.com/host-a-locker',
-      'ad-opportunities.html': 'https://www.dailyadventurebox.com/partnership-advertismentopportunities',
-      'story.html': 'https://www.dailyadventurebox.com/our-story'
+      'ad-opportunities.html': 'https://www.dailyadventurebox.com/partnership-advertismentopportunities'
     };
     d.querySelectorAll('a[href]').forEach(function (a) {
       var href = a.getAttribute('href');

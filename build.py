@@ -45,6 +45,7 @@ NAV = """<header class="nav{solid}" id="nav">
     <nav>
       <ul class="nav-links">
         <li><a href="gear.html">Gear</a></li>
+        <li><a href="reserve.html">Reserve</a></li>
         <li><a href="locations.html">For Locations</a></li>
         <li><a href="ad-opportunities.html">For Brands</a></li>
         <li><a href="story.html">Our Story</a></li>
@@ -58,6 +59,7 @@ NAV = """<header class="nav{solid}" id="nav">
 <div class="nav-mobile" id="navMobile">
   <a href="index.html">Home</a>
   <a href="gear.html">Gear</a>
+  <a href="reserve.html">Reserve &amp; Delivery</a>
   <a href="locations.html">For Locations</a>
   <a href="ad-opportunities.html">For Brands</a>
   <a href="story.html">Our Story</a>
@@ -80,6 +82,7 @@ FOOTER = """</main>
         <h4>Explore</h4>
         <a href="index.html#how">How It Works</a>
         <a href="gear.html">Gear</a>
+        <a href="reserve.html">Reserve &amp; Delivery</a>
         <a href="index.html#where">Find a Locker</a>
         <a href="{app}" target="_top">Get the App</a>
       </div>
@@ -123,7 +126,7 @@ CONTACT = """<section class="section bg-ocean dark" id="contact">
     <p class="eyebrow" style="justify-content:center">Get in Touch</p>
     <h2 class="display display-lg">{heading}</h2>
     <div class="email-big">support<span class="at">@</span>dailyadventurebox.com</div>
-    <p class="contact-note">Questions? Have a location or want lockers? Email us at the address above.</p>
+    <p class="contact-note">{note}</p>
   </div>
 </section>
 """
@@ -135,7 +138,7 @@ def build():
         meta = dict(l.split(':', 1) for l in m.group(1).splitlines())
         meta = {k.strip(): v.strip() for k, v in meta.items()}
         body = raw[m.end():]
-        body = body.replace('{{CONTACT}}', CONTACT.format(heading=meta.get('contact', 'Let’s Talk.'), support_email=SUPPORT))
+        body = body.replace('{{CONTACT}}', CONTACT.format(heading=meta.get('contact', 'Let’s Talk.'), support_email=SUPPORT, note=meta.get('contact_note', 'Questions? Have a location or want lockers? Email us at the address above.')))
         body = body.replace('{{APP}}', APP).replace('{{SUPPORT_EMAIL}}', SUPPORT)
         out = (HEAD.format(csp=CSP, title=html.escape(meta['title']), desc=html.escape(meta['desc']), og=meta.get('og', 'clj05-wide-bluesky-md.webp'))
                + NAV.format(solid=' solid' if meta.get('nav') == 'solid' else '', support=WF_SUPPORT, app=APP, support_email=SUPPORT)

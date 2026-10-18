@@ -80,7 +80,7 @@ FOOTER = """</main>
         <h4>Explore</h4>
         <a href="index.html#how">How It Works</a>
         <a href="gear.html">Gear</a>
-        <a href="index.html#where">Where We Are</a>
+        <a href="index.html#where">Find a Locker</a>
         <a href="{app}" target="_top">Get the App</a>
       </div>
       <div class="footer-col">
@@ -123,7 +123,7 @@ CONTACT = """<section class="section bg-ocean dark" id="contact">
     <p class="eyebrow" style="justify-content:center">Get in Touch</p>
     <h2 class="display display-lg">{heading}</h2>
     <div class="email-big">support<span class="at">@</span>dailyadventurebox.com</div>
-    <p class="contact-note">Email us at {support_email} with any questions. If you have a location or want lockers, reach out to {support_email}.</p>
+    <p class="contact-note">Questions? Have a location or want lockers? Email us at the address above.</p>
   </div>
 </section>
 """

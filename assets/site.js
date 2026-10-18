@@ -122,21 +122,17 @@
     if (!t.getAttribute('data-dup')) { t.innerHTML += t.innerHTML; t.setAttribute('data-dup', '1'); }
   });
 
-  /* ---- Hero video: stays hidden (photo shows) until YouTube reports it is playing ---- */
-  var yt = d.querySelector('.hero-media .yt');
-  if (yt && !reduced) {
-    var ytOrigin = 'https://www.youtube-nocookie.com';
-    var hello = function () {
-      try { yt.contentWindow.postMessage(JSON.stringify({ event: 'listening', id: 'hero', channel: 'widget' }), ytOrigin); } catch (e) {}
-    };
-    yt.addEventListener('load', function () { hello(); setTimeout(hello, 600); setTimeout(hello, 1500); });
-    w.addEventListener('message', function (e) {
-      if (e.origin !== ytOrigin || e.source !== yt.contentWindow) return;
-      var data; try { data = typeof e.data === 'string' ? JSON.parse(e.data) : e.data; } catch (err) { return; }
-      var info = data && data.info;
-      if (info && info.playerState === 1) yt.parentNode.classList.add('playing');
-    });
-  } else if (yt) { yt.parentNode.removeChild(yt); }
+  /* ---- Hero video: self-hosted silent loop (no captions or YouTube branding).
+     The photo shows until the video is actually playing; skipped for reduced motion
+     and when the visitor has data saver on. ---- */
+  var hv = d.querySelector('.hero-media video.yt');
+  var saveData = navigator.connection && navigator.connection.saveData;
+  if (hv && !reduced && !saveData) {
+    hv.src = (w.matchMedia('(max-width: 700px)').matches ? hv.getAttribute('data-src-sm') : hv.getAttribute('data-src'));
+    hv.muted = true;
+    hv.addEventListener('playing', function () { hv.parentNode.classList.add('playing'); });
+    var p = hv.play(); if (p && p.catch) p.catch(function () {});
+  } else if (hv) { hv.parentNode.removeChild(hv); }
 
   /* ---- Framed on dailyadventurebox.com: send page links to the parent site's routes ---- */
   var framed = false; try { framed = w.self !== w.top; } catch (e) { framed = true; }

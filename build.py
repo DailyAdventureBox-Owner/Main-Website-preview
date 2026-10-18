@@ -41,7 +41,7 @@ HEAD = """<!DOCTYPE html>
 
 NAV = """<header class="nav{solid}" id="nav">
   <div class="nav-inner">
-    <a class="nav-logo" href="index.html" aria-label="DailyAdventureBox home"><img src="media/dab-logo.png" alt="DailyAdventureBox"></a>
+    <a class="nav-logo" href="index.html" aria-label="DailyAdventureBox home"><img src="media/dab-logo.png" alt=""><span class="nav-word">Daily<b>Adventure</b>Box</span></a>
     <nav>
       <ul class="nav-links">
         <li><a href="gear.html">Gear</a></li>

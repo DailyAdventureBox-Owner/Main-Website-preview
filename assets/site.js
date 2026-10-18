@@ -82,7 +82,8 @@
         wd.classList.toggle('lit', r.top < mid);
       });
     };
-    w.addEventListener('scroll', lit, { passive: true }); lit();
+    if (reduced) words.forEach(function (wd) { wd.classList.add('lit'); });
+    else { w.addEventListener('scroll', lit, { passive: true }); lit(); }
   }
 
   /* ---- Card glow follows the pointer ---- */
@@ -121,16 +122,21 @@
     if (!t.getAttribute('data-dup')) { t.innerHTML += t.innerHTML; t.setAttribute('data-dup', '1'); }
   });
 
-  /* ---- Tell the Webflow parent page how tall we are (the site is framed) ---- */
-  function sendHeight() {
-    try {
-      var h = Math.max(d.body.scrollHeight, d.documentElement.scrollHeight);
-      w.parent.postMessage({ type: 'resize', height: h }, '*');
-    } catch (e) {}
-  }
-  w.addEventListener('load', sendHeight);
-  w.addEventListener('resize', sendHeight);
-  if ('ResizeObserver' in w) new ResizeObserver(sendHeight).observe(d.body); else setInterval(sendHeight, 800);
+  /* ---- Hero video: stays hidden (photo shows) until YouTube reports it is playing ---- */
+  var yt = d.querySelector('.hero-media .yt');
+  if (yt && !reduced) {
+    var ytOrigin = 'https://www.youtube-nocookie.com';
+    var hello = function () {
+      try { yt.contentWindow.postMessage(JSON.stringify({ event: 'listening', id: 'hero', channel: 'widget' }), ytOrigin); } catch (e) {}
+    };
+    yt.addEventListener('load', function () { hello(); setTimeout(hello, 600); setTimeout(hello, 1500); });
+    w.addEventListener('message', function (e) {
+      if (e.origin !== ytOrigin || e.source !== yt.contentWindow) return;
+      var data; try { data = typeof e.data === 'string' ? JSON.parse(e.data) : e.data; } catch (err) { return; }
+      var info = data && data.info;
+      if (info && info.playerState === 1) yt.parentNode.classList.add('playing');
+    });
+  } else if (yt) { yt.parentNode.removeChild(yt); }
 
   /* ---- Framed on dailyadventurebox.com: send page links to the parent site's routes ---- */
   var framed = false; try { framed = w.self !== w.top; } catch (e) { framed = true; }

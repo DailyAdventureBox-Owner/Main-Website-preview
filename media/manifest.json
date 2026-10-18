@@ -77,9 +77,6 @@
  "float-hangout-ladder": {
   "src": "float-hangout-ladder.png"
  },
- "i-own-a-location": {
-  "src": "i-own-a-location.jpg"
- },
  "kayak-koda-120": {
   "src": "kayak-koda-120.png"
  },
@@ -91,39 +88,6 @@
  },
  "kayak-vali": {
   "src": "kayak-vali.png"
- },
- "military-headshot": {
-  "src": "military-headshot.jpg"
- },
- "ocsj4353": {
-  "src": "ocsj4353.jpg"
- },
- "oftq5355": {
-  "src": "oftq5355.jpg"
- },
- "pfim3794": {
-  "src": "pfim3794.jpg",
-  "orig": [
-   1440,
-   1800
-  ],
-  "out": {
-   "lg": [
-    1440,
-    1800,
-    183
-   ],
-   "-md": [
-    960,
-    1200,
-    103
-   ],
-   "-sm": [
-    512,
-    640,
-    40
-   ]
-  }
  },
  "river-group-float": {
   "src": "river-group-float.jpg",
@@ -145,54 +109,6 @@
    "-sm": [
     640,
     427,
-    38
-   ]
-  }
- },
- "screenshot-145126": {
-  "src": "screenshot-145126.jpg",
-  "orig": [
-   1476,
-   1108
-  ],
-  "out": {
-   "lg": [
-    1476,
-    1108,
-    159
-   ],
-   "-md": [
-    1200,
-    901,
-    114
-   ],
-   "-sm": [
-    640,
-    480,
-    49
-   ]
-  }
- },
- "screenshot-145152": {
-  "src": "screenshot-145152.jpg",
-  "orig": [
-   1477,
-   1105
-  ],
-  "out": {
-   "lg": [
-    1477,
-    1105,
-    162
-   ],
-   "-md": [
-    1200,
-    898,
-    106
-   ],
-   "-sm": [
-    640,
-    479,
     38
    ]
   }

@@ -45,7 +45,6 @@ NAV = """<header class="nav{solid}" id="nav">
     <nav>
       <ul class="nav-links">
         <li><a href="gear.html">Gear</a></li>
-        <li><a href="reserve.html">Reserve</a></li>
         <li><a href="locations.html">For Locations</a></li>
         <li><a href="ad-opportunities.html">For Brands</a></li>
         <li><a href="story.html">Our Story</a></li>
@@ -59,7 +58,6 @@ NAV = """<header class="nav{solid}" id="nav">
 <div class="nav-mobile" id="navMobile">
   <a href="index.html">Home</a>
   <a href="gear.html">Gear</a>
-  <a href="reserve.html">Reserve &amp; Delivery</a>
   <a href="locations.html">For Locations</a>
   <a href="ad-opportunities.html">For Brands</a>
   <a href="story.html">Our Story</a>
@@ -82,7 +80,6 @@ FOOTER = """</main>
         <h4>Explore</h4>
         <a href="index.html#how">How It Works</a>
         <a href="gear.html">Gear</a>
-        <a href="reserve.html">Reserve &amp; Delivery</a>
         <a href="index.html#where">Find a Locker</a>
         <a href="{app}" target="_top">Get the App</a>
       </div>

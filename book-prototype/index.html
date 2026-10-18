@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<meta name="color-scheme" content="light">
+<!-- Prototype guard: no network requests from scripts, no form submissions, no frames. -->
+<meta http-equiv="Content-Security-Policy" content="connect-src 'none'; form-action 'none'; object-src 'none'; frame-src 'none'; base-uri 'self'">
+<title>Book Online Prototype · DailyAdventureBox</title>
+<meta name="description" content="Clickable prototype of the DailyAdventureBox website booking flow. Sample data only: no real bookings or charges.">
+<link rel="icon" type="image/png" href="../media/dab-logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/site.css">
+<link rel="stylesheet" href="book.css">
+</head>
+<body class="bk">
+<a class="bk-skip" href="#main" id="skipLink">Skip to main content</a>
+
+<div class="bk-top" id="bkTop">
+  <p class="bk-proto"><svg class="bk-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10"/><path d="M12 7v6M12 16.5h.01"/></svg><span>Prototype with sample data. No real bookings or charges.</span></p>
+  <header class="bk-header">
+    <div class="bk-header-inner">
+      <a class="bk-brand" href="#/" id="brandLink" aria-label="DailyAdventureBox book online, start page">
+        <img src="../media/dab-logo.png" alt="" width="38" height="38">
+        <span class="bk-word" aria-hidden="true">Daily<b>Adventure</b>Box</span>
+        <span class="bk-word-sub" aria-hidden="true">Book online</span>
+      </a>
+      <nav aria-label="Account and help">
+        <ul class="bk-header-links" id="headerLinks"></ul>
+      </nav>
+    </div>
+  </header>
+</div>
+<div class="bk-top-spacer" aria-hidden="true"></div>
+
+<main id="main" tabindex="-1">
+  <div class="bk-band dark" id="band"></div>
+  <div class="bk-wrap" id="wrap">
+    <section class="bk-summary" id="summary" aria-labelledby="summaryHeading" hidden></section>
+    <div class="bk-screen" id="screen">
+      <noscript><p class="bk-card">This prototype needs JavaScript turned on.</p></noscript>
+    </div>
+  </div>
+</main>
+
+<footer class="bk-footer">
+  <div class="bk-footer-inner">
+    <div class="bk-footer-brand">
+      <img src="../media/dab-logo.png" alt="" width="44" height="44">
+      <p>&copy; <span id="year">2026</span> Daily Adventure Box&#174;, Inc. Booking prototype for review, with sample data. No real bookings or charges.</p>
+    </div>
+    <nav aria-label="Footer">
+      <ul class="bk-footer-links">
+        <li><a href="#/help">Help</a></li>
+        <li><a href="https://www.dailyadventurebox.com/general-terms-and-conditions" target="_blank" rel="noopener noreferrer">Rental Terms<span class="sr-only"> (opens in a new tab)</span></a></li>
+        <li><a href="https://www.dailyadventurebox.com/federal-terms-and-conditions" target="_blank" rel="noopener noreferrer">Federal Rental Terms<span class="sr-only"> (opens in a new tab)</span></a></li>
+        <li><a href="https://www.dailyadventurebox.com/privacy-policy" target="_blank" rel="noopener noreferrer">Privacy Policy<span class="sr-only"> (opens in a new tab)</span></a></li>
+        <li><a href="../index.html">Main site preview</a></li>
+        <li><button type="button" data-act="resetAll" id="resetBtn">Start the prototype over</button></li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+<div class="sr-only" id="live" aria-live="polite" aria-atomic="true"></div>
+<dialog class="bk-dialog" id="dialog" aria-labelledby="dialogTitle"></dialog>
+<script src="book.js"></script>
+</body>
+</html>
